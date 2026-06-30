@@ -1,10 +1,117 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>So, you want to learn guitar?</title>
+    <style>
+        body {
+            /* Adjusted to a lighter gray for a high-contrast, accessible 4.5:1+ ratio */
+            background-color: #eaeaea; 
+            color: #000000;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav .nav-btn {
+            background-color: #ffffff;
+            color: #111111; /* Darkened slightly for clear contrast against the white button */
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 20px; 
+            font-weight: bold;
+            display: inline-block;
+            border: 1px solid #cccccc; /* Gives clear definition to the buttons */
+        }
+
+        nav .nav-btn:focus {
+            outline: 3px solid #0056b3; /* Visual focus indicator for keyboard users */
+        }
+
+        main {
+            max-width: 900px;
+            margin: 60px auto 0 auto;
+            text-align: center; 
+        }
+
+        h2.subheading {
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+            font-weight: normal;
+        }
+
+        .content-p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>hello</h1>
+
+    <header>
+        <h1>So, you want to learn guitar?</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#gear" class="nav-btn">Gear</a></li>
+                <li><a href="#theory" class="nav-btn">Theory</a></li>
+                <li><a href="#learning" class="nav-btn">Learning</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Changed from a generic div to an h2 for proper document hierarchy -->
+        <h2 class="subheading">I may be a beginner myself, but I can at least get you on the right track.</h2>
+
+        <p class="content-p">
+            Years back in 2014, I played bass with my brother in our band. I wasn’t great, but it was then that I realized how fun music can be. 
+            Unfortunately, I didn’t stick with it all that time, and back in december of 2026 I decided to give it another go
+        </p>
+
+        <p class="content-p">
+            Back in 2014 I had my brother at hand ready to give me pointers, but not anymore, I had to learn on my own through trial and 
+            error. Hopefully, I can impart onto you what I have learned to save you the hassle of figuring out where to even begin.
+        </p>
+
+        <p class="content-p">
+            I will get into gear recommendations to get you started, no matter if you want to tackle acoustic, bass, or electric guitar, just the 
+            bare minimum materials needed for entry, some additional accessory recommendations if you want them, some small tips by 
+            me and other resources to take your learning to the next level
+        </p>
+
+        <p class="content-p">
+            I will aim to find gear and resources that save you as much money as possible while getting you on the right track. Learning 
+            music should be accessible to all people of all economic backgrounds. I will list free and paid learning resources with clear 
+            indication on how much you can expect to pay.
+        </p>
+    </main>
+
 </body>
 </html>
