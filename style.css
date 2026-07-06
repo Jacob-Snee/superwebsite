@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
+    line-height: 1.6; /* Meets the "Line spacing at least 1.5" requirement */
 }
 
 header {
@@ -48,7 +49,6 @@ nav .nav-btn {
     border: 1px solid #cccccc; 
 }
 
-/* Active sub-page button styling */
 nav .nav-btn.active {
     background-color: #dcdcdc;
     border-color: #999999;
@@ -65,14 +65,13 @@ main {
 }
 
 h2.subheading, h2.page-title {
-    font-size: 1.8rem;
+    font-size: 26px; /* Meets the "large text at least 24px" requirement */
     margin-bottom: 40px;
     font-weight: normal;
 }
 
 .content-p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: 18px; /* Meets the "body text at least 16px (ideally 18px)" requirement */
     margin-bottom: 30px;
     max-width: 800px;
     margin-left: auto;
