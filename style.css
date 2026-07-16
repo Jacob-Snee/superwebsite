@@ -79,7 +79,7 @@ h2.subheading, h2.page-title {
 }
 
 /* ==========================================
-   PRODUCT CARDS LAYOUT (Added Changes)
+   PRODUCT CARDS LAYOUT
    ========================================== */
 
 /* Container for the product cards */
@@ -137,4 +137,31 @@ h2.subheading, h2.page-title {
     color: #b12704; /* Classic Amazon price red */
     font-weight: bold;
     margin-top: auto; /* Pushes price to the bottom of the card */
+}
+
+/* ==========================================
+   MOBILE RESPONSIVENESS (Screens below 768px)
+   ========================================== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stacks the title on top and nav underneath */
+        gap: 20px;              /* Adds breathing room between title and nav */
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.8rem;      /* Shrinks the title slightly so it fits on one or two lines */
+        line-height: 1.2;
+    }
+
+    nav ul {
+        justify-content: center; /* Centers your buttons horizontally */
+        flex-wrap: wrap;         /* Allows buttons to wrap to a second line if the screen is super narrow */
+        gap: 10px;               /* Slightly tighter spacing for small screens */
+    }
+
+    nav .nav-btn {
+        padding: 8px 18px;       /* Makes buttons slightly smaller on mobile */
+        font-size: 14px;
+    }
 }
