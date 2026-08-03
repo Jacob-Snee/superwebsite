@@ -188,6 +188,73 @@ h2.subheading, h2.page-title {
 }
 
 /* ==========================================
+   TABLES & SIGN-OFF STYLES
+   ========================================== */
+
+.table-container {
+    max-width: 850px;
+    margin: 40px auto;
+    overflow-x: auto; /* Allows smooth horizontal scrolling on mobile */
+}
+
+.practice-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.practice-table th {
+    background-color: #f0f0f0;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 14px 18px;
+    border-bottom: 2px solid #cccccc;
+}
+
+.practice-table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.practice-table tr:last-child td {
+    border-bottom: none;
+}
+
+.exercise-name {
+    font-weight: bold;
+    white-space: nowrap;
+    width: 25%;
+}
+
+.time-col {
+    white-space: nowrap;
+    font-weight: 500;
+    color: #333333;
+    width: 20%;
+}
+
+/* Final Sign-off block */
+.sign-off {
+    font-size: 22px;
+    font-weight: bold;
+    color: #111111;
+    margin: 50px auto 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px dashed #999999;
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+/* ==========================================
    MOBILE RESPONSIVENESS (Screens below 768px)
    ========================================== */
 @media (max-width: 768px) {
@@ -211,5 +278,10 @@ h2.subheading, h2.page-title {
     nav .nav-btn {
         padding: 8px 18px;       /* Makes buttons slightly smaller on mobile */
         font-size: 14px;
+    }
+
+    .practice-table th, .practice-table td {
+        padding: 10px 12px;
+        font-size: 15px;
     }
 }
