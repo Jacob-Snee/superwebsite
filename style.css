@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
-    line-height: 1.6; /* Meets the "Line spacing at least 1.5" requirement */
+    line-height: 1.6;
 }
 
 header {
@@ -65,13 +65,13 @@ main {
 }
 
 h2.subheading, h2.page-title {
-    font-size: 26px; /* Meets the "large text at least 24px" requirement */
+    font-size: 26px;
     margin-bottom: 40px;
     font-weight: normal;
 }
 
 .content-p {
-    font-size: 18px; /* Meets the "body text at least 16px (ideally 18px)" requirement */
+    font-size: 18px;
     margin-bottom: 30px;
     max-width: 800px;
     margin-left: auto;
@@ -82,17 +82,15 @@ h2.subheading, h2.page-title {
    PRODUCT CARDS LAYOUT
    ========================================== */
 
-/* Container for the product cards */
 .product-container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Stacks cards on mobile screens */
+    flex-wrap: wrap;
     margin: 40px auto;
     max-width: 900px;
 }
 
-/* Individual clickable product card */
 .product-card {
     background-color: #ffffff;
     border: 1px solid #cccccc;
@@ -100,7 +98,7 @@ h2.subheading, h2.page-title {
     width: 260px;
     padding: 15px;
     text-align: center;
-    text-decoration: none; /* Removes link underline */
+    text-decoration: none;
     color: #000000;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     display: flex;
@@ -108,22 +106,19 @@ h2.subheading, h2.page-title {
     justify-content: space-between;
 }
 
-/* Hover effect to make the cards feel interactive */
 .product-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-color: #999999;
 }
 
-/* Product images inside the cards */
 .product-img {
     max-width: 100%;
     height: 180px;
-    object-fit: contain; /* Keeps image proportions correct */
+    object-fit: contain;
     margin-bottom: 15px;
 }
 
-/* Product Title */
 .product-title {
     font-size: 16px;
     font-weight: bold;
@@ -131,12 +126,11 @@ h2.subheading, h2.page-title {
     line-height: 1.3;
 }
 
-/* Product Price */
 .product-price {
     font-size: 18px;
-    color: #b12704; /* Classic Amazon price red */
+    color: #b12704;
     font-weight: bold;
-    margin-top: auto; /* Pushes price to the bottom of the card */
+    margin-top: auto;
 }
 
 /* ==========================================
@@ -158,7 +152,6 @@ h2.subheading, h2.page-title {
     height: auto;
     display: block;
     border-radius: 4px;
-    /* Keeps fine line text/diagrams crisp across displays */
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
 }
@@ -171,13 +164,12 @@ h2.subheading, h2.page-title {
     text-align: right;
 }
 
-/* Chromatic scale callout block */
 .scale-box {
     background-color: #ffffff;
     border-left: 4px solid #0056b3;
-    border-top: 1px solid #cccccc;
-    border-right: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc;
+    border: 1px solid #cccccc;
+    border-left-width: 4px;
+    border-left-color: #0056b3;
     border-radius: 0 6px 6px 0;
     padding: 15px 20px;
     font-size: 18px;
@@ -188,70 +180,74 @@ h2.subheading, h2.page-title {
 }
 
 /* ==========================================
-   TABLES & SIGN-OFF STYLES
+   TABLES & SIGN-OFF STYLES (UPDATED)
    ========================================== */
 
 .table-container {
     max-width: 850px;
     margin: 40px auto;
-    overflow-x: auto; /* Allows smooth horizontal scrolling on mobile */
+    overflow-x: auto;
 }
 
 .practice-table {
     width: 100%;
     border-collapse: collapse;
     background-color: #ffffff;
-    border: 1px solid #cccccc;
-    border-radius: 8px;
+    border: 2px solid #888888; /* Solid outer border */
+    border-radius: 6px;
     overflow: hidden;
-    text-align: left;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: left; /* Overrides main text-align: center */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .practice-table th {
-    background-color: #f0f0f0;
+    background-color: #dcdcdc; /* Darker header fill */
     color: #000000;
     font-weight: bold;
     font-size: 18px;
     padding: 14px 18px;
-    border-bottom: 2px solid #cccccc;
+    border: 1px solid #888888; /* Distinct cell borders */
+    text-align: left;
 }
 
 .practice-table td {
     padding: 14px 18px;
-    border-bottom: 1px solid #e0e0e0;
+    border: 1px solid #cccccc; /* Grid lines between cells */
     font-size: 16px;
     vertical-align: top;
+    text-align: left;
 }
 
-.practice-table tr:last-child td {
-    border-bottom: none;
+/* Alternating row background for clean row separation */
+.practice-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
 .exercise-name {
     font-weight: bold;
-    white-space: nowrap;
     width: 25%;
 }
 
 .time-col {
     white-space: nowrap;
-    font-weight: 500;
-    color: #333333;
+    font-weight: bold;
+    color: #111111;
     width: 20%;
 }
 
-/* Final Sign-off block */
+/* Prominent, bold sign-off block */
 .sign-off {
-    font-size: 22px;
-    font-weight: bold;
-    color: #111111;
+    font-size: 24px;
+    font-weight: 800; /* Extra bold */
+    color: #000000;
     margin: 50px auto 30px auto;
-    padding: 20px;
+    padding: 20px 30px;
     background-color: #ffffff;
-    border: 2px dashed #999999;
+    border: 2px solid #333333;
     border-radius: 8px;
     max-width: 800px;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 /* ==========================================
@@ -259,29 +255,34 @@ h2.subheading, h2.page-title {
    ========================================== */
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Stacks the title on top and nav underneath */
-        gap: 20px;              /* Adds breathing room between title and nav */
+        flex-direction: column;
+        gap: 20px;
         text-align: center;
     }
 
     h1 {
-        font-size: 1.8rem;      /* Shrinks the title slightly so it fits on one or two lines */
+        font-size: 1.8rem;
         line-height: 1.2;
     }
 
     nav ul {
-        justify-content: center; /* Centers your buttons horizontally */
-        flex-wrap: wrap;          /* Allows buttons to wrap to a second line if the screen is super narrow */
-        gap: 10px;               /* Slightly tighter spacing for small screens */
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     nav .nav-btn {
-        padding: 8px 18px;       /* Makes buttons slightly smaller on mobile */
+        padding: 8px 18px;
         font-size: 14px;
     }
 
     .practice-table th, .practice-table td {
         padding: 10px 12px;
         font-size: 15px;
+    }
+    
+    .sign-off {
+        font-size: 20px;
+        padding: 15px 20px;
     }
 }
